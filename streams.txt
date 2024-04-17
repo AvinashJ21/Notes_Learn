@@ -1,0 +1,145 @@
+public class Employee {
+
+	String name;
+	int salary;
+	List<String> c = new ArrayList<String>();
+	String department;
+	int age;
+	int joiningDate;
+	String gender;
+
+	Employee(String name, int salary, List<String> c, String department, int age, int joiningDate, String gender) {
+		this.name = name;
+		this.salary = salary;
+		this.c = c;
+		this.department = department;
+		this.age = age;
+		this.joiningDate = joiningDate;
+		this.gender = gender;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getJoiningDate() {
+		return joiningDate;
+	}
+
+	public void setJoiningDate(int joiningDate) {
+		this.joiningDate = joiningDate;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getSalary() {
+		return salary;
+	}
+
+	public void setSalary(int salary) {
+		this.salary = salary;
+	}
+
+	public List<String> getC() {
+		return c;
+	}
+
+	public void setC(List<String> c) {
+		this.c = c;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + "]";
+	}
+
+
+}
+
+
+		System.out.println("*******Get all Employee Salary*********");
+		System.out.println("********Male and Female count********");
+		System.out.println("*******Seperate Male and Female*********");
+		System.out.println("********Get all the Departments********");
+		System.out.println("********Distinct all the departments using distinct********");
+		System.out.println("********Averaging Age of male and female********");
+		System.out.println("********Highest paid employee using max********");
+		System.out.println("*******Highest paid employee using  using sorting*********");
+		System.out.println("*******Number of employees in each department*********");
+		System.out.println("*******Names of employees who have joined after 2015*********");
+		
+		
+
+
+
+	List<Employee> l = new ArrayList<>();
+		List<String> c = Arrays.asList("Pune","Mumbai");
+		Employee e = new Employee("Harsha",10000,c,"HR",32,2015,"M");
+		l.add(e);
+		c = Arrays.asList("Pune","Mumbai","Noida");
+		e = new Employee("Shiva",21000,c,"Development",32,2015,"M");
+		l.add(e);
+		e = new Employee("Rishi",18000,c,"Designing",30,2012,"M");
+		l.add(e);
+		e = new Employee("Kavya",8000,c,"Development",26,2017,"F");
+		l.add(e);
+		e = new Employee("Amruta",12000,c,"BA",34,2017,"F");
+		l.add(e);
+		e = new Employee("Abhi",12000,c,"DB",32,2022,"M");
+		l.add(e);
+		e = new Employee("Sakshi",5000,c,"Development",23,2022,"F");
+		l.add(e);
+		e = new Employee("Akanksha",30000,c,"Development",33,2019,"F");
+		l.add(e);
+		e = new Employee("Avinash",22000,c,"Development",36,2022,"M");
+		l.add(e);
+		e = new Employee("Shubham",20000,c,"UI",32,2019,"M");
+		l.add(e);
+		e = new Employee("Deepak",28000,c,"UI",35,2019,"M");
+		l.add(e);
+	
+	
+	List<String> lst = Arrays.asList("Java","1001","Hello","1","Hello","2002");
+		
+		sum of all integers in the above
+		get the third character from every string 
+		
+		["5553","1111","2312","1212","5553","1212","1111"]
+		get first 2 highest repeated values
+		
+		 //find duplicates
+		 List<Integer> lst = Arrays.asList(2,5,3,5,2,1,4);
+		
+		 String str = "Java is a programming language";
+		reverse whose string length is greater than 4
+		
+		 //seperate even and odd
+		 List<Integer> l = Arrays.asList(5,1,2,3,4);
+		
+			String  st = "Hello Hi How are you";
