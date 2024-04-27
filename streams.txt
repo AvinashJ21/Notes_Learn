@@ -143,3 +143,21 @@ public class Employee {
 		 List<Integer> l = Arrays.asList(5,1,2,3,4);
 		
 			String  st = "Hello Hi How are you";
+			
+			
+			
+			
+
+
+
+		//Find max salary from each department
+		Map<String,Object> m =  l.stream().collect(Collectors.groupingBy(ee->ee.getDepartment(),Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparing(Employee::getSalary)), Optional::get)));
+		System.out.println(m);
+		//Filtering from grouped department
+		Map<String,List<Employee>> lm= l.stream().collect(Collectors.groupingBy(emp->emp.getDepartment(),Collectors.filtering(emp->emp.getSalary() < 10000, Collectors.toList())));
+		System.out.println("\n\n");
+		System.out.println(lm);
+		System.out.println("\n\n");
+		//Find max salary from each department
+		Map<String, Optional<Employee>> collect = l.stream().collect(Collectors.groupingBy(e1->e1.getDepartment(),Collectors.maxBy(Comparator.comparing(Employee::getSalary))));
+		System.out.println(collect);			
